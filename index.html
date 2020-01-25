@@ -7,13 +7,22 @@
     <title>
         Ofertas de viaje
     </title>
-    <style> 
+    <style>
+        .table-container {
+            text-align: -webkit-center;
+        }
         img {
             width:250px;
             height: 200px;
         }
-        .table-header {
-            background-color:  blue;
+
+        .table-header th{
+            background-color: aquamarine;
+        
+        }
+        .table-header tr{
+            background-color: blue;
+            text-align: center;
         }
         .table-body {
             background-color: chartreuse;
@@ -26,11 +35,17 @@
     </style>
 </head>
 <body>
-    <table>
+    <div class="table-container">
+      <table>
         <thead class="table-header">
+            <tr>
+                <th colspan="2">   <!-- este comando se pone para unir dos columnas dentro dela etiqueta(sea th[1ºfila]tr[2ºfila]td[cada celda de las tr]-->
+                    <h1>Ofertas de viaje</h1>
+                </th>
+            </tr>
             <tr> 
-                <th> BUDAPEST</th>
-                <th> PIRINEOS</th>
+                <td> BUDAPEST</td>
+                <td> PIRINEOS</td>
             </tr>
         </thead>
         <tbody class="table-body">
@@ -48,6 +63,7 @@
             </tr>
         </tbody>
     </table>
+   </div>
 </body>
 </html>
 <!--       
